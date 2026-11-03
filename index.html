@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bravion International – Premium Leather & Eco Products</title>
+  <meta name="description" content="Bravion International – handcrafted leather jackets, bags, purses, shoes and mango leather products – customised in any colour.">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Announcement bar -->
+  <div class="announce">
+    <div class="announce__track">
+      <span>Customise any product in any colour</span><span>Handcrafted leather</span><span>Enquire on WhatsApp</span><span>Eco-friendly mango leather</span>
+      <span>Customise any product in any colour</span><span>Handcrafted leather</span><span>Enquire on WhatsApp</span><span>Eco-friendly mango leather</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <button class="icon-btn header__burger" id="menuOpen" aria-label="Open menu">
+        <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+
+      <a href="index.html" class="header__logo" aria-label="Bravion International home">
+        <img src="assets/img/logo.png" alt="Bravion International">
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Main">
+        <div class="nav__head">
+          <img src="assets/img/logo.png" alt="Bravion International">
+          <button class="icon-btn" id="menuClose" aria-label="Close menu">
+            <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item has-mega">
+            <a href="shop.html">Shop <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></a>
+            <div class="mega">
+              <div class="mega__col">
+                <h6>Products</h6>
+                <a href="shop.html?cat=jackets">Leather Jackets</a>
+                <a href="shop.html?cat=bags">Bags</a>
+                <a href="shop.html?cat=purses">Purses &amp; Wallets</a>
+                <a href="shop.html?cat=shoes">Shoes</a>
+              </div>
+              <div class="mega__col">
+                <h6>Eco Collection</h6>
+                <a href="shop.html?material=Mango+Leather">Mango Leather – All Products</a>
+              </div>
+              <a href="#mango" class="mega__promo">
+                <img src="assets/img/mango/ml-11.jpg" alt="">
+                <span>New: Mango Leather Edit →</span>
+              </a>
+            </div>
+          </li>
+          <li class="nav__item"><a href="shop.html?cat=jackets">Jackets</a></li>
+          <li class="nav__item"><a href="shop.html?cat=bags">Bags</a></li>
+          <li class="nav__item"><a href="shop.html?cat=purses">Purses</a></li>
+          <li class="nav__item"><a href="shop.html?cat=shoes">Shoes</a></li>
+          <li class="nav__item"><a href="shop.html?material=Mango+Leather">Mango Leather</a></li>
+          <li class="nav__item"><a href="index.html#about">About</a></li>
+          <li class="nav__item"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button class="icon-btn" id="searchOpen" aria-label="Search">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="search" id="search">
+      <div class="container search__inner">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input type="search" placeholder="Search jackets, bags, wallets, shoes…" aria-label="Search products">
+        <button class="icon-btn" id="searchClose" aria-label="Close search">
+          <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+    </div>
+    <!-- inside the header so the menu drawer can sit above it -->
+    <div class="overlay" id="overlay"></div>
+  </header>
+
+  <main>
+
+    <!-- Hero slider -->
+    <section class="hero" aria-label="Featured collections">
+      <div class="hero__slide is-active" style="--bg:url('https://images.unsplash.com/photo-1511280303142-0051e93baeeb?w=1800&q=75')">
+        <div class="container hero__content">
+          <span class="eyebrow">Made to Order · 2026</span>
+          <h1>Crafted in Leather.<br>Made in Your Colour.</h1>
+          <p>Jackets, bags, purses and shoes – customised to your design and any colour you choose.</p>
+          <div class="hero__cta">
+            <a href="shop.html?cat=jackets" class="btn btn--primary">View Jackets</a>
+            <a href="shop.html" class="btn btn--ghost">Explore All</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero__slide" style="--bg:url('../img/mango/ml-04.jpg')">
+        <div class="container hero__content">
+          <span class="eyebrow">Bag Collection</span>
+          <h1>Carry Your Story<br>in Style.</h1>
+          <p>Totes, satchels and shoulder bags – pick a design, tell us your colour.</p>
+          <div class="hero__cta">
+            <a href="shop.html?cat=bags" class="btn btn--primary">View Bags</a>
+            <a href="#bestsellers" class="btn btn--ghost">Featured</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero__slide" style="--bg:url('../img/mango/ml-11.jpg')">
+        <div class="container hero__content">
+          <span class="eyebrow">Eco Collection</span>
+          <h1>Meet Mango<br>Leather.</h1>
+          <p>Plant-based, cruelty-free bags and wallets that feel as good as they look.</p>
+          <div class="hero__cta">
+            <a href="shop.html?material=Mango+Leather" class="btn btn--primary">Discover Mango Leather</a>
+            <a href="#" class="btn btn--ghost" data-wa>Ask on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <button class="hero__arrow hero__arrow--prev" aria-label="Previous slide"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button>
+      <button class="hero__arrow hero__arrow--next" aria-label="Next slide"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+      <div class="hero__dots" role="tablist"></div>
+      <div class="hero__progress" aria-hidden="true"><span></span></div>
+    </section>
+
+    <!-- USP strip -->
+    <section class="usp">
+      <div class="container usp__grid">
+        <div class="usp__item">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="8.5" cy="10" r="1.2"/><circle cx="12" cy="7.5" r="1.2"/><circle cx="15.5" cy="10" r="1.2"/><path d="M12 21a3 3 0 0 1 0-6h2"/></svg>
+          <div><strong>Any Colour</strong><span>Every product, in your colour</span></div>
+        </div>
+        <div class="usp__item">
+          <svg viewBox="0 0 24 24"><path d="M14 4l6 6-9 9H5v-6z"/><path d="M12 6l6 6"/></svg>
+          <div><strong>Custom Made</strong><span>Size, design &amp; finish to order</span></div>
+        </div>
+        <div class="usp__item">
+          <svg viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>
+          <div><strong>Handcrafted</strong><span>Quality checked by hand</span></div>
+        </div>
+        <div class="usp__item">
+          <svg viewBox="0 0 24 24"><path d="M3 21l1.6-4.7A8.5 8.5 0 1 1 8 19.6z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 1c-1-.5-2.5-2-3-3l1-1-1-2z"/></svg>
+          <div><strong>Enquire on WhatsApp</strong><span>Tap any product to ask us</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Looking for something specific?</span>
+          <h2>Shop by Category</h2>
+        </div>
+        <div class="cats">
+          <a href="shop.html?cat=jackets" class="cat">
+            <div class="cat__img"><img src="https://images.unsplash.com/photo-1521223890158-f9f7c3d5d504?w=700&q=70" alt="Leather jackets" loading="lazy"></div>
+            <h3>Leather Jackets</h3><span>View all →</span>
+          </a>
+          <a href="shop.html?cat=bags" class="cat">
+            <div class="cat__img"><img src="assets/img/mango/ml-05.jpg" alt="Bags" loading="lazy"></div>
+            <h3>Bags</h3><span>View all →</span>
+          </a>
+          <a href="shop.html?cat=purses" class="cat">
+            <div class="cat__img"><img src="assets/img/mango/ml-03.jpg" alt="Purses and wallets" loading="lazy"></div>
+            <h3>Purses &amp; Wallets</h3><span>View all →</span>
+          </a>
+          <a href="shop.html?cat=shoes" class="cat">
+            <div class="cat__img"><img src="assets/img/shoes/Burgundy%20Lace-Up%20Dress%20Shoes.jpeg" alt="Leather shoes" loading="lazy"></div>
+            <h3>Shoes</h3><span>View all →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Best sellers -->
+    <section class="section section--tint" id="bestsellers">
+      <div class="container">
+        <div class="section__head section__head--row">
+          <div>
+            <span class="eyebrow">Tap any product to enquire on WhatsApp</span>
+            <h2>Featured Products</h2>
+          </div>
+          <div class="tabs" role="tablist">
+            <button class="tab is-active" data-filter="all">All</button>
+            <button class="tab" data-filter="jackets">Jackets</button>
+            <button class="tab" data-filter="bags">Bags</button>
+            <button class="tab" data-filter="purses">Purses</button>
+            <button class="tab" data-filter="shoes">Shoes</button>
+            <button class="tab" data-filter="eco">Mango Leather</button>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <button class="carousel__btn carousel__btn--prev" aria-label="Scroll left"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button>
+          <div class="products" id="products"><!-- rendered by main.js --></div>
+          <button class="carousel__btn carousel__btn--next" aria-label="Scroll right"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+        </div>
+        <div class="center"><a href="shop.html" class="btn btn--outline">View All Products</a></div>
+      </div>
+    </section>
+
+    <!-- Collection banners -->
+    <section class="section">
+      <div class="container banners">
+        <a href="shop.html?cat=jackets" class="banner banner--tall" style="--bg:url('https://images.unsplash.com/photo-1520975954732-35dd22299614?w=1000&q=70')">
+          <div class="banner__text">
+            <span class="eyebrow">Jacket Collection</span>
+            <h3>Biker. Bomber.<br>Classic.</h3>
+            <span class="link">Explore Collection →</span>
+          </div>
+        </a>
+        <a href="shop.html?cat=bags" class="banner" style="--bg:url('../img/mango/ml-12.jpg')">
+          <div class="banner__text">
+            <span class="eyebrow">Everyday Carry</span>
+            <h3>Bags for Work &amp; Travel</h3>
+            <span class="link">Explore Collection →</span>
+          </div>
+        </a>
+        <a href="shop.html?cat=shoes" class="banner" style="--bg:url('../img/shoes/Blue%20Horsebit%20Loafers.jpeg')">
+          <div class="banner__text">
+            <span class="eyebrow">Shoes</span>
+            <h3>Step Out in Leather</h3>
+            <span class="link">Explore Collection →</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Mango leather feature -->
+    <section class="feature" id="mango">
+      <div class="container feature__grid">
+        <div class="feature__media">
+          <img src="assets/img/mango/ml-20.jpg" alt="Mango leather satchel" loading="lazy">
+          <div class="feature__badge"><strong>100%</strong><span>Plant<br>Based</span></div>
+        </div>
+        <div class="feature__text">
+          <span class="eyebrow">The Eco Edit</span>
+          <h2>Meet Mango Leather</h2>
+          <p>Made from discarded mango fruit pulp, our mango leather is a vegan, cruelty-free alternative with the look and feel of the real thing. Choose any of our 20 designs and we will make it in the colour you want.</p>
+          <ul class="ticks">
+            <li>Vegan &amp; cruelty-free material</li>
+            <li>Every design available in any colour</li>
+            <li>Lower water &amp; carbon footprint</li>
+          </ul>
+          <div class="hero__cta">
+            <a href="shop.html?material=Mango+Leather" class="btn btn--primary">View Mango Leather</a>
+            <a href="#" class="btn btn--outline" data-wa="Hello Bravion, I would like to know more about your mango leather products.">Ask on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Why Bravion</span>
+          <h2>Our Core Values</h2>
+        </div>
+        <div class="values">
+          <div class="value">
+            <div class="value__icon"><svg viewBox="0 0 24 24"><path d="M14 4l6 6-9 9H5v-6z"/><path d="M12 6l6 6"/></svg></div>
+            <h3>Individually Handcrafted</h3>
+            <p>Every piece is cut, stitched and finished by skilled artisans with years of experience.</p>
+          </div>
+          <div class="value">
+            <div class="value__icon"><svg viewBox="0 0 24 24"><path d="M5 21c0-9 6-15 15-16-1 9-7 15-15 16z"/><path d="M5 21l8-8"/></svg></div>
+            <h3>Sustainability</h3>
+            <p>Responsibly sourced leather and plant-based mango leather.</p>
+          </div>
+          <div class="value">
+            <div class="value__icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></div>
+            <h3>Export Quality</h3>
+            <p>International standards in every detail — trusted by customers and retailers worldwide.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats strip -->
+    <section class="stats">
+      <div class="container stats__grid">
+        <div><strong data-count="15">0</strong><span>Years of craft</span></div>
+        <div><strong data-count="25">0</strong><span>Countries served</span></div>
+        <div><strong data-count="500">0</strong><span>Product designs</span></div>
+        <div><strong data-count="20000">0</strong><span>Happy customers</span></div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section--tint">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Let our customers speak</span>
+          <h2>What People Say</h2>
+        </div>
+        <div class="reviews">
+          <figure class="review">
+            <div class="stars">★★★★★</div>
+            <blockquote>The leather jacket fits perfectly and the finish is premium. Feels like it will last for years.</blockquote>
+            <figcaption><span class="avatar">RS</span><div><strong>Rohan S.</strong><small>Ahmedabad</small></div></figcaption>
+          </figure>
+          <figure class="review">
+            <div class="stars">★★★★★</div>
+            <blockquote>Loved my mango leather tote! Nobody believes it's plant-based. Great stitching and packaging.</blockquote>
+            <figcaption><span class="avatar">PM</span><div><strong>Priya M.</strong><small>Mumbai</small></div></figcaption>
+          </figure>
+          <figure class="review">
+            <div class="stars">★★★★☆</div>
+            <blockquote>Got a satchel made in our brand colour for corporate gifting. Quality was consistent and delivery was on time.</blockquote>
+            <figcaption><span class="avatar">AK</span><div><strong>Anita K.</strong><small>Bengaluru</small></div></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bulk / corporate CTA -->
+    <section class="cta">
+      <div class="container cta__inner">
+        <div>
+          <h2>Corporate Gifting &amp; Bulk Orders</h2>
+          <p>Custom colours and branding on jackets, bags, wallets and shoes for your team and clients.</p>
+        </div>
+        <a href="#" class="btn btn--white" data-wa="Hello Bravion, I would like a quote for a bulk / corporate order.">Get a Quote on WhatsApp</a>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section newsletter">
+      <div class="container newsletter__inner">
+        <span class="eyebrow">Stay in the loop</span>
+        <h2>Join the Bravion Club</h2>
+        <p>Be the first to know about new arrivals, offers and the eco edit.</p>
+        <form class="newsletter__form" id="newsletterForm">
+          <input type="email" placeholder="Enter your email" required aria-label="Email address">
+          <button type="submit" class="btn btn--primary">Subscribe</button>
+        </form>
+        <p class="newsletter__msg" id="newsletterMsg" hidden>Thank you! You're on the list.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="assets/img/logo.png" alt="Bravion International" class="footer__logo">
+        <p>Premium leather and eco-friendly products, handcrafted in India and loved worldwide.</p>
+        <div class="social">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V10H6v4h3v7h4v-7h3l1-4h-4V7a1 1 0 0 1 1-1h2z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <a href="shop.html?cat=jackets">Leather Jackets</a>
+        <a href="shop.html?cat=bags">Bags</a>
+        <a href="shop.html?cat=purses">Purses &amp; Wallets</a>
+        <a href="shop.html?cat=shoes">Shoes</a>
+        <a href="shop.html?material=Mango+Leather">Mango Leather</a>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <a href="contact.html">Contact Us</a>
+        <a href="#" data-wa="Hello Bravion, I would like to customise a product.">Custom Orders</a>
+        <a href="#" data-wa="Hello Bravion, I would like a quote for a bulk / corporate order.">Bulk &amp; Corporate Orders</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+      <div>
+        <h4>Contact Us</h4>
+        <p class="contact-line"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          Bravion International,<br>Unit 12, Sample Industrial Estate,<br>Ring Road, Ahmedabad – 380000,<br>Gujarat, India</p>
+        <p class="contact-line"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a href="#" data-wa>+91 82002 81654 (WhatsApp)</a></p>
+        <p class="contact-line"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:info@bravion.example">info@bravion.example</a></p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <span>© <span id="year">2026</span> Bravion International. All rights reserved.</span>
+        <span class="pay">Every product can be customised in any colour</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="whatsapp" data-wa aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M3 21l1.6-4.7A8.5 8.5 0 1 1 8 19.6z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 1c-1-.5-2.5-2-3-3l1-1-1-2z"/></svg>
+  </a>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/home.js"></script>
+</body>
+</html>

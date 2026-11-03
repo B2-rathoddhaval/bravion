@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us – Bravion International</title>
+  <meta name="description" content="Bravion International – handcrafted leather jackets, bags, purses, shoes and mango leather products – customised in any colour.">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Announcement bar -->
+  <div class="announce">
+    <div class="announce__track">
+      <span>Customise any product in any colour</span><span>Handcrafted leather</span><span>Enquire on WhatsApp</span><span>Eco-friendly mango leather</span>
+      <span>Customise any product in any colour</span><span>Handcrafted leather</span><span>Enquire on WhatsApp</span><span>Eco-friendly mango leather</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <button class="icon-btn header__burger" id="menuOpen" aria-label="Open menu">
+        <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+
+      <a href="index.html" class="header__logo" aria-label="Bravion International home">
+        <img src="assets/img/logo.png" alt="Bravion International">
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Main">
+        <div class="nav__head">
+          <img src="assets/img/logo.png" alt="Bravion International">
+          <button class="icon-btn" id="menuClose" aria-label="Close menu">
+            <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item has-mega">
+            <a href="shop.html">Shop <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></a>
+            <div class="mega">
+              <div class="mega__col">
+                <h6>Products</h6>
+                <a href="shop.html?cat=jackets">Leather Jackets</a>
+                <a href="shop.html?cat=bags">Bags</a>
+                <a href="shop.html?cat=purses">Purses &amp; Wallets</a>
+                <a href="shop.html?cat=shoes">Shoes</a>
+              </div>
+              <div class="mega__col">
+                <h6>Eco Collection</h6>
+                <a href="shop.html?material=Mango+Leather">Mango Leather – All Products</a>
+              </div>
+              <a href="shop.html?material=Mango+Leather" class="mega__promo">
+                <img src="assets/img/mango/ml-11.jpg" alt="">
+                <span>New: Mango Leather Edit →</span>
+              </a>
+            </div>
+          </li>
+          <li class="nav__item"><a href="shop.html?cat=jackets">Jackets</a></li>
+          <li class="nav__item"><a href="shop.html?cat=bags">Bags</a></li>
+          <li class="nav__item"><a href="shop.html?cat=purses">Purses</a></li>
+          <li class="nav__item"><a href="shop.html?cat=shoes">Shoes</a></li>
+          <li class="nav__item"><a href="shop.html?material=Mango+Leather">Mango Leather</a></li>
+          <li class="nav__item"><a href="index.html#about">About</a></li>
+          <li class="nav__item"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button class="icon-btn" id="searchOpen" aria-label="Search">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="search" id="search">
+      <div class="container search__inner">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input type="search" placeholder="Search jackets, bags, wallets, shoes…" aria-label="Search products">
+        <button class="icon-btn" id="searchClose" aria-label="Close search">
+          <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+    </div>
+    <!-- inside the header so the menu drawer can sit above it -->
+    <div class="overlay" id="overlay"></div>
+  </header>
+
+  <main class="contact-page">
+
+    <!-- Page banner -->
+    <section class="collection-hero" style="--bg:url('../img/mango/ml-09.jpg')">
+      <div class="container collection-hero__inner">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span>/</span>Contact Us
+        </nav>
+        <h1>Contact Us</h1>
+        <p>Tell us what you would like made – any product, any colour. Your enquiry comes straight to us on WhatsApp.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact">
+
+        <!-- Enquiry form -->
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="contact__form-head">
+            <span class="eyebrow">Enquiry form</span>
+            <h2>Send Us Your Requirement</h2>
+            <p>Fill in the details below and press the button – WhatsApp will open with your message ready to send.</p>
+          </div>
+
+          <div class="field-row">
+            <label class="field">
+              <span>Full name <em>*</em></span>
+              <input type="text" name="name" autocomplete="name" required placeholder="e.g. Priya Shah">
+              <small class="field__error">Please enter your name.</small>
+            </label>
+            <label class="field">
+              <span>Mobile / WhatsApp number <em>*</em></span>
+              <input type="tel" name="phone" autocomplete="tel" required placeholder="e.g. 98765 43210" inputmode="tel">
+              <small class="field__error">Please enter a valid number (10–15 digits).</small>
+            </label>
+          </div>
+
+          <div class="field-row">
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" autocomplete="email" placeholder="you@example.com">
+              <small class="field__error">Please enter a valid email.</small>
+            </label>
+            <label class="field">
+              <span>City / Country</span>
+              <input type="text" name="city" autocomplete="address-level2" placeholder="e.g. Ahmedabad, India">
+            </label>
+          </div>
+
+          <div class="field">
+            <span>What is your enquiry about? <em>*</em></span>
+            <div class="choice" id="enquiryType">
+              <label><input type="radio" name="type" value="Custom order" checked><span>Custom order</span></label>
+              <label><input type="radio" name="type" value="Bulk / corporate order"><span>Bulk / corporate</span></label>
+              <label><input type="radio" name="type" value="Product information"><span>Product information</span></label>
+              <label><input type="radio" name="type" value="Other"><span>Other</span></label>
+            </div>
+          </div>
+
+          <div class="field-row">
+            <label class="field">
+              <span>Product category</span>
+              <select name="category" id="fCategorySelect">
+                <option value="">Not sure yet</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Specific product (optional)</span>
+              <select name="product" id="fProductSelect">
+                <option value="">Any / not decided</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="field-row">
+            <label class="field">
+              <span>Preferred colour</span>
+              <div class="colour-input">
+                <input type="color" name="colourPick" value="#8b5a2b" aria-label="Pick a colour">
+                <input type="text" name="colour" placeholder="e.g. Olive green, or pick from the box" list="colourList">
+              </div>
+              <datalist id="colourList">
+                <option value="Black"><option value="Brown"><option value="Tan"><option value="Cream"><option value="White">
+                <option value="Red"><option value="Maroon"><option value="Pink"><option value="Green"><option value="Blue">
+                <option value="Navy"><option value="Mustard"><option value="Purple"><option value="Beige">
+              </datalist>
+            </label>
+            <div class="field-row field-row--tight">
+              <label class="field">
+                <span>Quantity</span>
+                <input type="number" name="qty" min="1" value="1" inputmode="numeric">
+                <small class="field__error">Minimum 1.</small>
+              </label>
+              <label class="field" id="sizeField" hidden>
+                <span>Size</span>
+                <input type="text" name="size" placeholder="e.g. M / UK 9">
+              </label>
+            </div>
+          </div>
+
+          <label class="field">
+            <span>Your message <em>*</em></span>
+            <textarea name="message" rows="5" required placeholder="Describe what you would like – design changes, logo / branding, required date, etc."></textarea>
+            <small class="field__error">Please tell us a little about what you need.</small>
+          </label>
+
+          <div class="contact__submit">
+            <button type="submit" class="btn btn--wa">
+              <svg viewBox="0 0 24 24"><path d="M3 21l1.6-4.7A8.5 8.5 0 1 1 8 19.6z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 1c-1-.5-2.5-2-3-3l1-1-1-2z"/></svg>
+              Send on WhatsApp
+            </button>
+            <p class="contact__note">Your details are only used to reply to your enquiry.</p>
+          </div>
+
+          <div class="contact__done" id="contactDone" hidden>
+            <strong>WhatsApp is opening…</strong>
+            <span>Please press <b>Send</b> in WhatsApp to deliver your message. If it did not open, <a href="#" id="contactRetry" target="_blank" rel="noopener">tap here</a>.</span>
+          </div>
+        </form>
+
+        <!-- Contact details -->
+        <aside class="contact__info">
+          <div class="info-card">
+            <h3>Get in Touch</h3>
+            <a href="#" data-wa class="info-line">
+              <span class="info-line__icon info-line__icon--wa"><svg viewBox="0 0 24 24"><path d="M3 21l1.6-4.7A8.5 8.5 0 1 1 8 19.6z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 1c-1-.5-2.5-2-3-3l1-1-1-2z"/></svg></span>
+              <span><small>WhatsApp</small>+91 82002 81654</span>
+            </a>
+            <a href="mailto:info@bravion.example" class="info-line">
+              <span class="info-line__icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+              <span><small>Email</small>info@bravion.example</span>
+            </a>
+            <div class="info-line">
+              <span class="info-line__icon"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
+              <span><small>Address</small>Unit 12, Sample Industrial Estate, Ring Road, Ahmedabad – 380000, Gujarat, India</span>
+            </div>
+            <div class="info-line">
+              <span class="info-line__icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+              <span><small>Working hours</small>Mon – Sat, 10:00 AM – 7:00 PM</span>
+            </div>
+          </div>
+
+          <div class="info-card info-card--tint">
+            <h3>How It Works</h3>
+            <ol class="steps">
+              <li><strong>Choose a design</strong><span>Pick from our collection or share your own idea.</span></li>
+              <li><strong>Tell us your colour</strong><span>Any colour, size or branding you need.</span></li>
+              <li><strong>We confirm on WhatsApp</strong><span>We reply with details, timeline and a quote.</span></li>
+            </ol>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="assets/img/logo.png" alt="Bravion International" class="footer__logo">
+        <p>Premium leather and eco-friendly products, handcrafted in India and loved worldwide.</p>
+        <div class="social">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V10H6v4h3v7h4v-7h3l1-4h-4V7a1 1 0 0 1 1-1h2z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <a href="shop.html?cat=jackets">Leather Jackets</a>
+        <a href="shop.html?cat=bags">Bags</a>
+        <a href="shop.html?cat=purses">Purses &amp; Wallets</a>
+        <a href="shop.html?cat=shoes">Shoes</a>
+        <a href="shop.html?material=Mango+Leather">Mango Leather</a>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <a href="contact.html">Contact Us</a>
+        <a href="#" data-wa="Hello Bravion, I would like to customise a product.">Custom Orders</a>
+        <a href="#" data-wa="Hello Bravion, I would like a quote for a bulk / corporate order.">Bulk &amp; Corporate Orders</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+      <div>
+        <h4>Contact Us</h4>
+        <p class="contact-line"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          Bravion International,<br>Unit 12, Sample Industrial Estate,<br>Ring Road, Ahmedabad – 380000,<br>Gujarat, India</p>
+        <p class="contact-line"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><a href="#" data-wa>+91 82002 81654 (WhatsApp)</a></p>
+        <p class="contact-line"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:info@bravion.example">info@bravion.example</a></p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <span>© <span id="year">2026</span> Bravion International. All rights reserved.</span>
+        <span class="pay">Every product can be customised in any colour</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="whatsapp" data-wa aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M3 21l1.6-4.7A8.5 8.5 0 1 1 8 19.6z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 1c-1-.5-2.5-2-3-3l1-1-1-2z"/></svg>
+  </a>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/contact.js"></script>
+</body>
+</html>

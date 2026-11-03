@@ -1,7 +1,7 @@
 // Bravion International – product catalogue (shared by all pages, no backend)
 // Nothing is sold online: every product opens a WhatsApp enquiry to the owner.
 
-const WHATSAPP_NUMBER = "918200281654"; // country code + number, no "+" or spaces
+const WHATSAPP_NUMBER = "919974742545"; // country code + number, no "+" or spaces
 
 const unsplash = (id, w = 600) => `https://images.unsplash.com/${id}?w=${w}&q=70`;
 // local paths ("assets/...") are used as-is, anything else is an Unsplash photo id
@@ -14,6 +14,7 @@ const CATEGORIES = [
   { slug: "bags", name: "Bags", short: "Bags", desc: "Totes, satchels and shoulder bags – every design can be made in the colour you choose.", banner: mango(4) },
   { slug: "purses", name: "Purses & Wallets", short: "Purses", desc: "Wallets and long purses with clean edges and smart storage, customised for you.", banner: mango(15) },
   { slug: "shoes", name: "Shoes", short: "Shoes", desc: "Loafers, derbies and boots in genuine leather – made to order in your colour.", banner: shoe("Blue Horsebit Loafers") },
+  { slug: "jute-bags", name: "Jute Bags", short: "Jute Bags", desc: "Natural, strong and reusable jute bags – any size, colour and print, with your logo. Bulk orders welcome.", banner: "photo-1758708536099-9f46dc81fffc" },
 ];
 
 // p(id, code, name, cat, material, color, image, hoverImage, extra)
@@ -23,6 +24,10 @@ const p = (id, code, name, cat, material, color, image, image2, extra = {}) =>
 // Mango Leather catalogue – 20 products from the PDF (photos in assets/img/mango)
 const m = (n, name, cat, color, desc, extra) =>
   p(100 + n, `ML-${String(n).padStart(2, "0")}`, name, cat, "Mango Leather", color, mango(n), null, { desc, eco: true, featured: true, ...extra });
+
+// Jute bags – sample photos until real ones are added (same four types as the home page section)
+const j = (n, name, image, desc) =>
+  p(300 + n, `BR-JB${String(n).padStart(2, "0")}`, name, "jute-bags", "Jute", "Natural", image, null, { desc, badge: "Jute" });
 
 // Shoes – s(n, name, colour, photo file name in assets/img/shoes, extra)
 const s = (n, name, color, file, extra) =>
@@ -57,6 +62,12 @@ const PRODUCTS = [
   p(4, "BR-J04", "Women's Moto Jacket", "jackets", "Genuine Leather", "Black", "photo-1511280303142-0051e93baeeb", "photo-1602370463198-086436840055"),
   p(5, "BR-J05", "Cropped Leather Jacket", "jackets", "Genuine Leather", "Black", "photo-1602370463198-086436840055", "photo-1511280303142-0051e93baeeb"),
   p(6, "BR-J06", "Vintage Racer Jacket", "jackets", "Genuine Leather", "Black", "photo-1675877879221-871aa9f7c314", "photo-1520975954732-35dd22299614"),
+
+  // Jute bags
+  j(1, "Jute Shopping Bag", "photo-1787074656306-67d69f3d8576", "Everyday carry bag with strong handles."),
+  j(2, "Jute Tote Bag", "photo-1768734837394-182f596e84ac", "Roomy tote in natural or dyed jute."),
+  j(3, "Printed & Logo Jute Bag", "photo-1758708536099-9f46dc81fffc", "Your brand or event printed on jute."),
+  j(4, "Jute Pouch & Gift Bag", "photo-1541191662729-433a58fb02f2", "Drawstring pouch for gifts and packaging."),
 
   // Shoes
   s(1, "Blue Horsebit Loafers", "Blue", "Blue Horsebit Loafers", { featured: true }),
@@ -104,8 +115,8 @@ function productCard(pr, i = 0) {
           <img src="${pr.img}" alt="${pr.name}" loading="lazy">
           ${pr.img2 ? `<img class="product__img2" src="${pr.img2}" alt="" loading="lazy">` : ""}
         </a>
-        ${pr.eco ? `<span class="badge badge--eco">Mango Leather</span>` : ""}
-        <a href="${href}" target="_blank" rel="noopener" class="quick-add">${WA_ICON} Enquire on WhatsApp</a>
+        ${pr.eco ? `<span class="badge badge--eco">Mango Leather</span>` : pr.badge ? `<span class="badge badge--eco">${pr.badge}</span>` : ""}
+        <a href="${href}" target="_blank" rel="noopener" class="quick-add">${WA_ICON} Enquire<span class="quick-add__more">on WhatsApp</span></a>
       </div>
       <div class="product__body">
         <div class="product__cat">${catName(pr.cat)} · ${pr.code}</div>

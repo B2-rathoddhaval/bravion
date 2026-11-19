@@ -69,9 +69,18 @@ const countIO = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 });
 $$("[data-count]").forEach((el) => countIO.observe(el));
 
-// ---------- Newsletter (dummy) ----------
+// ---------- Newsletter: no backend, the sign-up is sent to us on WhatsApp ----------
 $("#newsletterForm").addEventListener("submit", (e) => {
   e.preventDefault();
+  const value = $("#newsletterInput").value.trim();
+  const isEmail = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(value);
+  const digits = value.replace(/[\s()+-]/g, "");
+  const isPhone = /^\d{7,15}$/.test(digits);
+  $("#newsletterError").hidden = isEmail || isPhone;
+  if (!isEmail && !isPhone) { $("#newsletterMsg").hidden = true; return; }
+
+  const text = `Hello Bravion, I would like to join the *Bravion Club* to hear about new arrivals and offers.\n\n${isEmail ? "Email" : "Mobile"}: ${value}`;
+  window.open(waURL(text), "_blank", "noopener");
   e.target.reset();
   $("#newsletterMsg").hidden = false;
 });

@@ -33,7 +33,17 @@ const j = (n, name, image, desc) =>
 const s = (n, name, color, file, extra) =>
   p(200 + n, `BR-S${String(n).padStart(2, "0")}`, name, "shoes", "Genuine Leather", color, shoe(file), null, extra);
 
+// Bravion bags – b(n, name, material, colour, photo file in assets/img/bags, description)
+const b = (n, name, material, color, file, desc) =>
+  p(400 + n, `BR-B${String(n).padStart(2, "0")}`, name, "bags", material, color, `assets/img/bags/${file}.jpg`, null, { desc, featured: true });
+
 const PRODUCTS = [
+  b(1, "Ruby Weave Tote", "Leather & Jute", "Ruby Red & Natural", "ruby-weave-tote", "A structured top-handle tote with a woven jute body, leather trim, embossed logo and a matching hang tag."),
+  b(2, "Noir Woven Tote", "Genuine Leather", "Black, Tan & Blush", "noir-woven-tote", "A structured tote with a woven leather front, croc-embossed sides and handles, and a contrast top panel."),
+  b(3, "Sandstone Luxe Tote", "Leather & Jute", "Chocolate Brown & Natural", "sandstone-luxe-tote", "A classic top-handle tote with a natural jute body, rich brown leather trim and an embossed logo panel."),
+  b(4, "Chocolate Quilted Hobo", "Genuine Leather", "Chocolate Brown", "chocolate-quilted-hobo", "A soft hobo shoulder bag with grid-quilted leather panels, a zip-top closure and gold-tone hardware."),
+  b(5, "Burgundy Crossbody Tote", "Genuine Leather", "Burgundy", "burgundy-crossbody-tote", "A woven-front crossbody tote with a tab closure and a wide striped canvas shoulder strap."),
+
   m(1, "Structured Everyday Tote", "bags", "Mint", "A spacious tote with long shoulder handles and adjustable side details."),
   m(2, "Minimal Shoulder Bag", "bags", "Blush Pink", "A streamlined shoulder bag with a zip-top closure and a detachable crossbody strap."),
   m(3, "Compact Fold Wallet", "purses", "Green", "A compact wallet with a structured front tab and neat stitched detailing."),

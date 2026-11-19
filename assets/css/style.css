@@ -451,6 +451,11 @@ a.info-line:hover { color: var(--brand); }
 .newsletter__form { display: flex; gap: 10px; background: var(--cream); padding: 6px; border-radius: 999px; }
 .newsletter__form input { flex: 1; border: 0; background: none; outline: 0; padding: 0 20px; font: inherit; min-width: 0; }
 .newsletter__msg { color: var(--brand); font-weight: 500; margin-top: 16px; }
+.newsletter__error { color: #c0392b; font-size: 14px; margin-top: 12px; }
+.newsletter__contact { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 28px; margin-top: 24px; font-size: 15px; }
+.newsletter__contact a { display: inline-flex; align-items: center; gap: 8px; color: inherit; }
+.newsletter__contact a:hover { color: var(--brand); }
+.newsletter__contact svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 
 /* Footer */
 .footer { background: #0d0f14; color: #b5b8c0; padding-top: 70px; font-size: 14px; }
